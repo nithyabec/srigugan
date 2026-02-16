@@ -47,14 +47,25 @@
     nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
     section { padding: 50px 20px; max-width: 1100px; margin: auto; }
     h2 { color: #0b6fa4; }
+    .contact-extra {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
     .contact-card {
       max-width: 260px;
       width: 100%;
       height: auto;
-      display: block;
-      margin: 24px auto 0 auto;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       border-radius: 4px;
+    }
+    .contact-disclaimer {
+      flex: 1;
+      min-width: 220px;
+      font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
@@ -80,15 +91,16 @@
   <p><strong>Phone:</strong> +91 87782 28977</p>
   <p><strong>Location:</strong> Tamil Nadu, India</p>
 
-  <p style="font-size:14px;color:#666;">
-    Disclaimer: We provide pharma marketing services only and do not promote prescription medicines to consumers.
-  </p>
-
-  <img
-    src="images/contact-card.png"
-    alt="Sri Gugan Pharmaceuticals contact details"
-    class="contact-card"
-  >
+  <div class="contact-extra">
+    <img
+      src="images/contact-card.png"
+      alt="Sri Gugan Pharmaceuticals contact details"
+      class="contact-card"
+    >
+    <p class="contact-disclaimer">
+      <strong>Disclaimer:</strong> We provide pharma marketing services only and do not promote prescription medicines to consumers.
+    </p>
+  </div>
 </section>
 
 <footer>
